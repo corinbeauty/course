@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案件拆解與法務分析報告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        
+        <!-- 返回按鈕 -->
+        <div class="mb-6">
+            <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-indigo-600 transition-colors">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                返回案件歷程摘要
+            </a>
+        </div>
+
+        <!-- Header -->
+        <header class="bg-indigo-900 rounded-t-xl shadow-md p-6 md:p-8 text-white relative overflow-hidden">
+            <div class="relative z-10">
+                <div class="flex items-center mb-2">
+                    <span class="bg-indigo-500 text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">內部機密文件</span>
+                </div>
+                <h1 class="text-2xl md:text-3xl font-bold mb-2">案件拆解與法務分析報告</h1>
+                <p class="text-indigo-200 text-sm">針對 50 萬元求償案之法律爭點、攻防策略與處置原則</p>
+            </div>
+            <!-- 裝飾用圖形 -->
+            <div class="absolute right-0 top-0 opacity-10">
+                <svg class="w-48 h-48 -mt-8 -mr-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            </div>
+        </header>
+
+        <div class="bg-white rounded-b-xl shadow-md border border-t-0 border-gray-200">
+            
+            <!-- 法律爭點 -->
+            <div class="p-6 md:p-8 border-b border-gray-100">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="bg-red-100 text-red-600 p-2 rounded-lg mr-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </span>
+                    本案法律爭點 (五大核心)
+                </h2>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1">爭點一｜服務安全性</h3>
+                        <p class="text-sm text-gray-600">是否存在足以導致感染之服務瑕疵？</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1">爭點二｜因果關係</h3>
+                        <p class="text-sm text-gray-600">9/19服務與9/20症狀、9/21診斷間，是否具有相當因果關係？</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1">爭點三｜損害範圍</h3>
+                        <p class="text-sm text-gray-600">實際醫療費、交通、住宿、工作損失及其他損害為何？</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1">爭點四｜損害擴大 (民法第217條)</h3>
+                        <p class="text-sm text-gray-600">9/20自行延後就醫及9/21未住院，是否造成損害擴大？</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1">爭點五｜50萬元請求</h3>
+                        <p class="text-sm text-gray-600">請求之法律基礎、具體項目、計算方式及客觀證據為何？</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 攻防地圖 -->
+            <div class="p-6 md:p-8 border-b border-gray-100">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-600 p-2 rounded-lg mr-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7l5.447-2.724A1 1 0 0116 5.618v10.764a1 1 0 01-.553.894L10 20z"></path></svg>
+                    </span>
+                    雙方攻防地圖與應對準則
+                </h2>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-4 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider w-1/3">對方可能主張</th>
+                                <th scope="col" class="px-4 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider w-2/3">我方應對原則</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-4 py-3 text-sm text-gray-900 font-medium">按摩後發生蜂窩性組織炎</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">承認時間先後，但要求釐清因果關係。</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 text-sm text-gray-900 font-medium">精油造成感染</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">要求具體醫療依據及感染來源判斷。</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm text-gray-900 font-medium">有診斷書即證明因果關係</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">主張「診斷疾病」不等於「證明感染來源」。消費者仍須就服務危險與損害間之相當因果關係負舉證責任。</td>
+                            </tr>
+                            <tr class="bg-red-50">
+                                <td class="px-4 py-3 text-sm text-red-700 font-bold">要求 50 萬賠償</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">不直接拒絕，要求逐項提供具體損害項目、計算方式及客觀單據（收據、薪資證明等）。</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm text-gray-900 font-medium">店家應負消保法第7條責任</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">承認消保法適用可能性，但持續爭執「服務安全性瑕疵」與「因果關係」。</td>
+                            </tr>
+                            <tr class="bg-orange-50">
+                                <td class="px-4 py-3 text-sm text-gray-900 font-medium">客人延誤就醫 / 未依醫囑住院</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">保留作為「損害擴大」之待釐清事項。若確認具因果關係，得依民法第217條主張與有過失。</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm text-gray-900 font-medium">店家拒賠或消極處理</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">提出 9/20～9/22 主動關心、建議就醫及提出探視之完整紀錄反駁。</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 text-sm text-gray-900 font-medium">店家無免責證據</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">提出監視器畫面、服務紀錄、當日其他客戶狀況、器具清潔SOP等保全證據。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 談判策略框架 -->
+            <div class="p-6 md:p-8 border-b border-gray-100">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="bg-green-100 text-green-600 p-2 rounded-lg mr-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                    </span>
+                    談判策略：三層責任與四段式論述
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- 三層責任 -->
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-3 border-b-2 border-green-500 inline-block pb-1">三層責任框架</h3>
+                        <ul class="space-y-3 mt-4">
+                            <li class="bg-green-50 p-3 rounded border border-green-100">
+                                <span class="font-bold text-green-800">第一層：事實承認</span><br>
+                                <span class="text-sm text-gray-700">承認已知客觀事實：「顧客確實於服務後出現症狀，並經診斷為蜂窩性組織炎。」</span>
+                            </li>
+                            <li class="bg-yellow-50 p-3 rounded border border-yellow-100">
+                                <span class="font-bold text-yellow-800">第二層：責任未確認</span><br>
+                                <span class="text-sm text-gray-700">主張缺乏直接證據：「目前尚無充分醫療資料確認疾病係因本次服務所造成。」</span>
+                            </li>
+                            <li class="bg-red-50 p-3 rounded border border-red-100">
+                                <span class="font-bold text-red-800">第三層：損害金額待證明</span><br>
+                                <span class="text-sm text-gray-700">要求損害舉證：「即使具因果關係，仍應依實際醫療、工作損失等項目逐項確認，要求具體單據。」</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 調解會四段式 -->
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-3 border-b-2 border-blue-500 inline-block pb-1">調解/協商四段式發言</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700 bg-gray-50 p-4 rounded-lg border border-gray-200 mt-4">
+                            <li><strong class="text-gray-900">我方態度：</strong>展現誠意，表示願意處理並協助釐清。</li>
+                            <li><strong class="text-gray-900">客觀事實：</strong>陳述時序（9/19服務 → 9/20紅腫/急診 → 9/21診斷）。</li>
+                            <li><strong class="text-gray-900">爭議核心：</strong>界定爭點為「服務安全性瑕疵」與「相當因果關係」之判定。</li>
+                            <li><strong class="text-gray-900">金額問題：</strong>聲明即使成立賠償責任，具體損害組成及計算基礎仍需嚴格確認。</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 官方回覆範本與和解提醒 -->
+            <div class="p-6 md:p-8">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <span class="bg-purple-100 text-purple-600 p-2 rounded-lg mr-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                    </span>
+                    標準化處置與書面回覆
+                </h2>
+                
+                <h3 class="font-bold text-gray-800 text-sm mb-2">對外正式回覆範本</h3>
+                <div class="bg-gray-800 text-gray-100 p-5 rounded-lg font-mono text-sm leading-relaxed shadow-inner mb-6">
+                    關於您提出之醫療費用及賠償請求，本店已完整了解您的就醫及治療情形，也十分關心您的身體狀況。<br><br>
+                    
+                    針對本次事件，本店並未迴避處理，於接獲您反映後即持續關心，並主動提出探視及協助就醫之安排。<br><br>
+                    
+                    惟目前依現有醫療資料，僅能確認您於服務後出現相關症狀並經醫療院所診斷為右小腿蜂窩性組織炎，尚不足以確認該疾病與本次服務間具有直接或相當因果關係。<br><br>
+                    
+                    另為釐清實際損害範圍，針對您所提出之50萬元賠償請求，敬請提供相關醫療費用、後續治療、工作損失及其他請求項目之具體資料及證明文件，以利雙方依實際損害及相關法律規定進行協商。<br><br>
+                    
+                    本店仍願以理性、善意方式持續協商處理，並希望在事實及相關資料充分釐清後，尋求雙方均能接受之解決方式。
+                </div>
+
+                <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                    <h3 class="font-bold text-yellow-800 text-sm mb-2 flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        和解書「終局性條款」必備約定
+                    </h3>
+                    <p class="text-sm text-yellow-900 mb-2">若達成和解，為防範後續衍生訴訟，和解書應經法務審閱並須包含以下條款：</p>
+                    <p class="text-sm text-gray-700 bg-white p-3 border border-yellow-100 rounded font-mono">
+                        「雙方就本次消費服務所生之爭議，於甲方支付約定和解金後，乙方確認已獲得本案全部及最終之和解金額，除雙方另有明文約定之事項外，就本事件之醫療費、財產上損害、工作損失、精神慰撫金及其他民事請求，均無其他請求。」
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
