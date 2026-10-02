@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>客訴理賠案件談判歷程報告</title>
+    <title>客訴理賠案件歷程報告</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -168,7 +168,7 @@
                                 </span>
                                 <span class="text-blue-500 text-[10px] font-semibold">(點擊放大)</span>
                             </p>
-                            <img src="1.jpg" alt="腳部紅腫照片" class="w-full h-auto rounded clickable-img" onclick="openModal(this.src)" onerror="this.onerror=null; this.src='https://placehold.co/400x300/f3f4f6/9ca3af?text=Image+1.jpg\n(Please+place+in+same+folder)';">
+                            <img src="./1.jpg" alt="腳部紅腫照片" class="w-full h-auto rounded clickable-img" onclick="openModal(this.src)">
                         </div>
                     </div>
                 </div>
@@ -298,9 +298,9 @@
                             </p>
                             <!-- Scrolling container for long chat image -->
                             <div class="scroll-container h-80 overflow-y-auto border border-gray-300 rounded bg-black p-2">
-                                <img src="2.jpg" alt="Line 對話紀錄截圖" class="w-full object-contain mx-auto clickable-img" onclick="openModal(this.src)" onerror="this.onerror=null; this.src='https://placehold.co/400x1200/000000/ffffff?text=Image+2.jpg\n(Chat+Log)';">
+                                <img src="./2.jpg" alt="Line 對話紀錄截圖" class="w-full object-contain mx-auto clickable-img" onclick="openModal(this.src)">
                             </div>
-                            <p class="text-xs text-gray-400 mt-2 text-right">※ 由於對話紀錄較長，您可以在上方區塊內上下滾動，或<span class="text-blue-500 cursor-pointer" onclick="openModal('2.jpg')">點擊放大檢視</span>全圖。</p>
+                            <p class="text-xs text-gray-400 mt-2 text-right">※ 由於對話紀錄較長，您可以在上方區塊內上下滾動，或<span class="text-blue-500 cursor-pointer" onclick="openModal('./2.jpg')">點擊放大檢視</span>全圖。</p>
                         </div>
                     </div>
                 </div>
@@ -321,18 +321,7 @@
         // Function to open modal
         function openModal(imageSrc) {
             modal.style.display = "block";
-            // Use the actual clicked image source, but fallback if it failed to load originally
-            if (imageSrc.includes("placehold.co")) {
-                 // Try to extract original filename if it's a placeholder
-                 let match = imageSrc.match(/text=Image\+(.*?)\\n/);
-                 if(match && match[1]) {
-                     modalImg.src = match[1];
-                 } else {
-                     modalImg.src = imageSrc;
-                 }
-            } else {
-                modalImg.src = imageSrc;
-            }
+            modalImg.src = imageSrc;
             
             // Prevent scrolling on body when modal is open
             document.body.style.overflow = "hidden";
